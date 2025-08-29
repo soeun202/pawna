@@ -415,7 +415,6 @@ font-weight: 300;
 #map {
   background-image: url(../images/map/map.jpg);
   height: 900px;
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1099,4 +1098,5 @@ h5 {
 .lo_ft_img{
   margin-left: 150px;
 }
+
 
