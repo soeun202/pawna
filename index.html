@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400">
+    <title>PAWNA</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./images/sim.png" type="image/x-icon">
+    <!-- webfont -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable.css" />
+
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="inner_header">
+                <h1 class="logo"><a href="#"><img src="./images/main/logo.png" alt=""></a>
+                </h1>
+                <div>
+                    <ul class="util">
+                        <li><a href="javascript:return false;">로그인</a></li>
+                        <li><a href="javascript:return false;">내정보</a></li>
+                        <li><a href="javascript:return false;">쿠폰함</a></li>
+                        <li><a href="javascript:return false;" class="util_button">예약내역</a></li>
+                    </ul>
+                    <ul class="gnb">
+                        <li><a href="index.html#link1">여행</a></li>
+                        <li><a href="index.html#link2">패키지</a></li>
+                        <li><a href="index.html#link3">용품대여</a></li>
+                        <li><a href="index.html#link4">커뮤니티</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="main_banner">
+            <div class="inner_main">
+                <div class="text">
+                    <h1>네 발과 나, <span>PAWNA</span>
+                        <br>함께 떠나는 여행
+                    </h1>
+                    <h6>반려견과의 특별한 여행, 지금 떠나보세요</h6>
+                    <div class="wrap_button">
+                        <a href="index.html#link1" class="button1">여행찾기</a>
+                        <a href="index.html#link2" class="button2">패키지 보기</a>
+                    </div>
+                </div>
+                <img src="./images/main/paw.png" alt="paw" class="dog-illust">
+            </div>
+
+        </div>
+        <div id="search">
+            <div id="link1"></div>
+            <h2>원하는 여행을 한눈에</h2>
+            <h3>지역, 일정, 여행 스타일까지 반려견과 함께 떠날 완벽한 여행을 찾아보세요.</h3>
+
+            <div class="wrap_search">
+                <div class="search_bar">
+                    <img src="./images/icon/icon_1.png" alt="">
+                    <input placeholder="여행지나 숙소를 검색해보세요" type="text" placeholder="CHECK IN">
+                </div>
+                <div class="date">
+                    <img src="./images/icon/icon_2.png" alt="">
+                    <input placeholder="07.29 - 07.30 (1박)" type="text" id="datepicker1" placeholder="CHECK OUT"
+                        class="day">
+                </div>
+                <div class="select"><img src="./images/icon/icon_3.png" alt="">
+                    <select name="age" id="">
+                        <option value="">2인 1마리</option>
+                        <option value="">2인 1마리</option>
+                        <option value="">2인 1마리</option>
+                        <option value="">2인 1마리</option>
+                    </select>
+
+                </div>
+                <button class="search-btn">검색</button>
+            </div>
+        </div>
+
+        <div id="banner1">
+            <div class="slide-track">
+                <div class="banner-slide" style="background-image: url('./images/banner/ba1.jpg')"></div>
+                <div class="banner-slide" style="background-image: url('./images/banner/ba2.jpg')"></div>
+                <div class="banner-slide" style="background-image: url('./images/banner/ba3.jpg')"></div>
+                <div class="banner-slide" style="background-image: url('./images/banner/ba4.jpg')"></div>
+                <div class="banner-slide" style="background-image: url('./images/banner/ba5.jpg')"></div>
+            </div>
+
+            <div class="inner_banner">
+                <div class="bn_t">
+                    <h1><span>Pawna가 고른 이번 달 </span>추천 여행지</h1>
+                    <h6>숲속 힐링부터 바닷가 산책까지,
+                        <br>반려견과 함께하는 감성 가득한
+                        <br>여행지들을 소개합니다.
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="inner_menu">
+                <h1><img src="./images/icon/icon_paw.png" alt=""></h1>
+                <h2>테마별 여행지</h2>
+                <div class="menu_icon">
+
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon1.png" alt=""></li>
+                            <li>
+                                <p>바다</p>
+                            </li>
+                        </a></ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon2.png" alt=""></li>
+                            <li>
+                                <p>숲속 힐링</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon3.png" alt=""></li>
+                            <li>
+                                <p>캠핑</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon4.png" alt=""></li>
+                            <li>
+                                <p>펜션&호캉스</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon5.png" alt=""></li>
+                            <li>
+                                <p>펫 플레이스</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon6.png" alt=""></li>
+                            <li>
+                                <p>맛집 여행</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul><a href="javascript:return false;">
+                            <li><img src="./images/icon/icon7.png" alt=""></li>
+                            <li>
+                                <p>계절별 추천</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="map">
+            <div class="inner_map">
+                <h2>지역별
+                    <br>이달의 추천 플레이스
+                </h2>
+                <h3>반려동물과 함께 갈 수 있는 곳을 지역별로 추천해드려요</h3>
+                <div id="banner">
+                    <div class="map_slide">
+                        <section class="center slider">
+                            <div class="place1">
+                                <img src="images/map/beach1.png" alt="해수욕장">
+                            </div>
+                            <div class="place2">
+                                <img src="images/map/gangwon1.png" alt="해수욕장">
+                            </div>
+                        </section>
+                    </div>
+                    <ul class="place">
+                        <li>부산</li>
+                        <li>강원</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="kit">
+            <div id="link2"></div>
+            <div class="inner_kit">
+                <h2>준비는 Pawna가, 여행은 너와 나</h2>
+                <h3>반려견 전용 여행준비물 패키지로 더 편하게 여행하세요.</h3>
+                <img src="./images/product/product_package.png" alt="">
+                <div class="box">
+                    <ul>
+                        <li><a href="javascript:return false;">
+                                <img src="./images/product/box1.png" alt="">
+                                <h5>Basic Travel Kit</h5>
+                                <h4>초보 여행자를 위한 기본키트</h4>
+                            </a> </li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:return false;">
+                                <img src="./images/product/box2.png" alt="">
+                                <h5>Summer Cooling Kit</h5>
+                                <h4>여름 쿨링 키트 박스</h4>
+                            </a> </li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:return false;">
+                                <img src="./images/product/box3.png" alt="">
+                                <h5>Treats Kit</h5>
+                                <h4>간식 전용 키트 박스</h4>
+                            </a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:return false;">
+                                <img src="./images/product/box4.png" alt="">
+                                <h5>Camping & Car Camping Kit</h5>
+                                <h4>캠핑·차박 키트 박스</h4>
+
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="container">
+            <div id="link3"></div>
+            <div class="content1">
+                <div class="inner_ctn1">
+                    <div class="ct_pd1">
+                        <img src="./images/product/openbox.png" alt="">
+                    </div>
+                    <div class="ct_pd2">
+                        <div class="slider-container">
+                            <div class="slider-track">
+                                <img src="./images/content/slider1.png" alt="">
+                                <img src="./images/content/slider2.png" alt="">
+                                <img src="./images/content/slider3.png" alt="">
+                                <img src="./images/content/slider4.png" alt="">
+                                <img src="./images/content/slider5.png" alt="">
+                                <img src="./images/content/slider6.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="ct_text">
+                            <h2>이렇게 들어있어요!</h2>
+                            <p><img src="./images/content/color.png" alt=""></p>
+                            <p><img src="./images/content/icon.png" alt=""></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="content2">
+                <div class="inner_ctn2">
+                    <div class="ct_pd1-1">
+                        <h2>짐은 가볍게, 마음은 든든하게</h2>
+                        <h3>여행 필수템인 캐리어, 유모차, 방수매트까지 간편하게 대여하고 가볍게 떠나세요.</h3>
+                        <p><img src="./images/content/color.png" alt=""></p>
+                        <div class="rental">
+                            <ul>
+                                <a href="javascript:return false;">
+                                    <li class="img-box">
+                                        <img src="./images/content/stroller.png" alt="">
+                                        <div class="overlay">
+                                            <span>대여하기</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>반려견 유모차</h4>
+                                    </li>
+                                    <li>
+                                        <h6>접이식, 부드러운 바퀴
+                                            <br>여행지 산책이나 도심 이동에 최적
+                                        </h6>
+                                    </li>
+                                </a>
+                            </ul>
+
+                            <ul>
+                                <a href="javascript:return false;">
+                                    <li class="img-box">
+                                        <img src="./images/content/carrier.png" alt="">
+                                        <div class="overlay">
+                                            <span>대여하기</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h4>캐리어</h4>
+                                    </li>
+                                    <li>
+                                        <h6>통기성 메쉬 / 어깨끈 포함
+                                            <br>항공/기차/고속버스 등 이용 시 추천
+                                        </h6>
+                                    </li>
+                                </a>
+                            </ul>
+                            <p><img src="./images/content/Group.png" alt=""></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div id="guide">
+            <div class="center_gd">
+                <h4 class="gdt1">고객님이 여행을 더 편하게 준비하실 수 있도록</h4>
+                <h2>대여 · 반납 안내</h2>
+                <h3>포우나 회원님이라면 누구나 간편하게 대여하고, 여행이 끝난 후 손쉽게 반납하실 수 있어요.</h3>
+                <img src="./images/guide/Group1.png" alt="">
+                <div class="gd">
+                    <div class="inner_gd">
+                        <ul>
+                            <li><img src="./images/icon/icon111.png" alt=""></li>
+                            <li>
+                                <h4>용품대여</h4>
+                            </li>
+                            <li>
+                                <h5>대여/반납 상품 선택 후
+                                    <br>‘대여/반납 신청
+                                </h5>
+                            </li>
+                        </ul>
+                        <p><img src="./images/guide/Group4.png" alt=""></p>
+                        <ul>
+                            <li><img src="./images/icon/icon222.png" alt=""></li>
+                            <li>
+                                <h4>상품수령</h4>
+                            </li>
+                            <li>
+                                <h5>선택하신 날짜에 맞춰
+                                    <br>배송으로 수령
+                                    <br>(문 앞 배송 / 방문 수령 선택 가능)
+                                </h5>
+                            </li>
+                        </ul>
+                        <p><img src="./images/guide/Group4.png" alt=""></p>
+                        <ul>
+                            <li><img src="./images/icon/icon333.png" alt=""></li>
+                            <li>
+                                <h4>여행 후 반납</h4>
+                            </li>
+                            <li>
+                                <h5>제품을 다시 포장한 뒤
+                                    <br>택배 기사님께 전달하거나
+                                    <br>직접 발송
+                                </h5>
+                            </li>
+                        </ul>
+                        <p><img src="./images/guide/Group4.png" alt=""></p>
+                        <ul>
+                            <li><img src="./images/icon/icon444.png" alt=""></li>
+                            <li>
+                                <h4>반납완료</h4>
+                            </li>
+                            <li>
+                                <h5>포우나 창고 도착 확인 후
+                                    <br>반납이 완료됩니다
+                                </h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="gd2">
+                    <div class="inner_gd2">
+                        <img src="./images/guide/Group3.png" alt="">
+                        <h2>꼭 확인 해주세요!</h2>
+                    </div>
+                    <ul>
+                        <li>회원 가입 후 대여 서비스 이용이 가능합니다</li>
+                        <li>사용 후 제품은 깨끗하게 정리하여 반납해 주세요</li>
+                        <li>기본 대여 기간은 5일이며, 연장 신청 가능합니다</li>
+                        <li>일부 품목은 사용 흔적 또는 훼손 시 추가 비용이 발생할 수 있습니다</li>
+                        <li>1회 최대 3개 품목까지 대여가 가능합니다</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div id="review">
+            <div id="link4"></div>
+            <div class="inner_rv">
+                <h2>다녀온 여행이 전해주는 진짜 이야기</h2>
+                <h3>반려가족들의 생생한 후기와 꿀팁!
+                    <br>여행 전 참고해 보세요.
+                </h3>
+                <div class="wrap_rv">
+                    <div class="rv1"><img src="./images/review/rv1.png" alt=""></div>
+                    <div class="rv2"><a href="javascript:return false;"><img src="./images/review/rv2.png" alt=""></a>
+                    </div>
+                    <div class="rv3"><img src="./images/review/rv3.png" alt=""></div>
+                    <div class="rv4"><a href="javascript:return false;"><img src="./images/review/rv4.png" alt=""></a>
+                    </div>
+                    <div class="rv5"><img src="./images/review/rv5.png" alt=""></div>
+                    <div class="rv6"><a href="javascript:return false;"><img src="./images/review/rv6.png" alt=""></a>
+                    </div>
+                </div>
+                <p><a href="javascript:return false;"><img src="./images/review/rv7.png" alt=""></a></p>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="inner_ft">
+                <div class="img_ft">
+                    <img src="./images/footer/h_1.png" alt="">
+                </div>
+                <div class="wrap_ft">
+                    <div class="text_ft">
+                        <ul>
+                            <li><span>이용안내</span></li>
+                            <li><a href="javascript:return false;">대여 신청 방법</a></li>
+                            <li><a href="javascript:return false;">반납/연장 절차</a></li>
+                            <li><a href="javascript:return false;">자주 묻는 질문 (FAQ)</a></li>
+                            <li><a href="javascript:return false;">이용약관</a></li>
+                            <li><a href="javascript:return false;">개인정보처리방침</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>고객지원</span></li>
+                            <li><a href="javascript:return false;">고객센터: 0000-0000 (평일 10:00–17:00)</a></li>
+                            <li><a href="javascript:return false;">이메일: help@pawna.co.kr</a></li>
+                            <li><a href="javascript:return false;">카카오톡 문의</a></li>
+                            <li><a href="javascript:return false;">배송/교환/환불 안내</a></li>
+                        </ul>
+                        <ul>
+                            <li><span>회사정보</span></li>
+                            <li><a href="javascript:return false;">브랜드 소개</a></li>
+                            <li><a href="javascript:return false;">사업자 정보 확인</a></li>
+                            <li><a href="javascript:return false;">파트너십 & 제휴 문의</a></li>
+                            <li><a href="javascript:return false;">채용 안내 (선택 사항)</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo_ft">
+                        <p>https://soeun202.github.io/pawna/</p>
+                        <a href="javascript:return false;"><img src="./images/footer/Instagram.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./images/footer/Facebook.png" alt=""></a>
+                        <a href="javascript:return false;"><img src="./images/footer/LinkedIn.png" alt=""></a>
+                        <div class="lo_ft_img"><a href="#"><img src="./images/footer/h_logo.png" alt=""></a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 지도 -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $(document).on('ready', function () {
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: false,
+                slidesToShow: 1,
+                autoplay: false,
+                slidesToScroll: 1
+            });
+        });
+    </script>
+    <!-- 지도 -->
+    <script>
+        const slides = document.querySelectorAll('#banner1 .banner-slide');
+        let current = 0;
+
+        // ✅ 첫 번째 슬라이드 활성화
+        slides[current].classList.add('active');
+
+        setInterval(() => {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 5000); // 5초마다 변경
+    </script>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        AOS.init(); //에오스
+
+        //달력 START
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+        });
+        $.datepicker.setDefaults({
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] //달력의 월 부분 텍스트
+            , monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+            , dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+            , dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+        $(function () {
+            $("#datepicker1").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+        });
+        $.datepicker.setDefaults({
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] //달력의 월 부분 텍스트
+            , monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+            , dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+            , dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+        //달력 END
+
+
+    </script>
+
+</body>
+
+</html>
+</div>
+</div>
+</body>
+
+</html>
